@@ -1,0 +1,72 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>練習</title>
+</head>
+<body>
+  <div id="app">
+    <h3>課程陣列顯示</h3>
+
+    <template v-for="(item, key) in imagesUrl" :key="key">
+      <div>
+        <input type="text" v-model="imagesUrl[key]"/>
+      </div>
+    </template>
+
+    <!-- !imagesUrl.length 如果不是空的，就可以新增一個 -->
+    <!-- imagesUrl[imagesUrl.length -1] 陣列是有内容的情況下 , @click="imagesUrl.push('') 就可以新增一個"--> 
+    <div v-if="!imagesUrl.length || imagesUrl[imagesUrl.length -1]">
+      <button type="button" @click="imagesUrl.push('')">新增一個</button>
+    </div>
+    <div v-else> <!-- 如果輸入任何内容，就把它刪掉 -->
+      <button type="button" @click="imagesUrl.pop()">刪除當前</button>
+    </div>
+
+  </div>
+
+  <script>
+ 
+
+  </script>
+</body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>練習</title>
+</head>
+<body>
+  <div id="app">
+    <h3>課程陣列顯示</h3>
+
+    <template v-for="(item, key) in imagesUrl" :key="key">
+      <div>
+        <input type="text" v-model="imagesUrl[key]"/>
+      </div>
+    </template>
+
+    <!-- !imagesUrl.length 如果不是空的，就可以新增一個 -->
+    <!-- imagesUrl[imagesUrl.length -1] 陣列是有内容的情況下 , @click="imagesUrl.push('') 就可以新增一個"--> 
+    <div v-if="!imagesUrl.length || imagesUrl[imagesUrl.length -1]">
+      <button type="button" @click="imagesUrl.push('')">新增一個</button>
+    </div>
+    <div v-else> <!-- 如果輸入任何内容，就把它刪掉 -->
+      <button type="button" @click="imagesUrl.pop()">刪除當前</button>
+    </div>
+
+  </div>
+
+  <script>
+ 
+
+  </script>
+</body>
+>>>>>>> dc3f841d47dca0871a2e1dbe8f9b81d32476a0bf
+</html>
